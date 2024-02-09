@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginFragment"
+    android:background="@color/lol">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:layout_gravity="start"
+
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="421dp"
+        android:layout_height="255dp"
+        android:gravity="center"
+        android:text="@string/bienvenida"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_weight="0.004"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:hint="Introduce tu Usuario aqui" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/Acceder"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/btnTX"
+            style="@style/botonera"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

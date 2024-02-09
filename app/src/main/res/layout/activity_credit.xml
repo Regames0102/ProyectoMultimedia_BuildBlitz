@@ -4,40 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/lol">
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="182dp"
-        android:layout_gravity="start"
-        android:src="@drawable/logo" />
-    <TextView
-        android:id="@+id/resultTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/CreditTX"
-        android:textSize="40sp"
-        android:textColor="@color/white"
-        android:layout_gravity="center"/>
 
-    <!-- Puedes personalizar esta sección con información sobre tu aplicación -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/explicacion"
-        android:textSize="24sp"
-        android:layout_gravity="center"
-        android:padding="16dp"
-        android:textColor="@color/white"
-
-        />
-
-    <!-- Botón para contactar -->
-    <Button
-        android:id="@+id/contactButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Contactar"
-        android:layout_gravity="center"
-        android:onClick="contactarOnClick"/>
 
 </LinearLayout>
