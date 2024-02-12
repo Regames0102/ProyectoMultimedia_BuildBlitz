@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lol">#540B65</color>
     <color name="orange">#E64A19</color>
+    <color name="blue">#303F9F</color>
     <color name="md_theme_primary">#465D91</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_primaryContainer">#D9E2FF</color>

@@ -32,10 +32,8 @@
         android:layout_gravity="center"
         android:padding="16dp"
         android:textColor="@color/white"
-
         />
 
-    <!-- Botón para contactar -->
     <Button
         android:id="@+id/contactButton"
         android:layout_width="match_parent"

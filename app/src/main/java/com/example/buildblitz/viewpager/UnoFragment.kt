@@ -1,24 +1,30 @@
-package com.example.buildblitz
+package com.example.buildblitz.viewpager
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.example.buildblitz.databinding.FragmentLoginBinding
+import android.widget.TextView
+import com.example.buildblitz.R
+import com.example.buildblitz.databinding.FragmentUnoBinding
+import com.example.buildblitz.databinding.FragmentViewpagerBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-class LoginFragment : Fragment() {
+/**
+ * A simple [Fragment] subclass.
+ * Use the [UnoFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class UnoFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
-    private var _binding: FragmentLoginBinding?=null
+    private var _binding: FragmentUnoBinding?=null
     private val binding get()=_binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,21 +39,16 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
-        binding.Acceder.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_viewpagerFragment)
-        }
+        // Inflate the layout for this fragment
+        _binding = FragmentUnoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+    }
     companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            LoginFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        private const val ARG_OBJECT = "object"
     }
 }

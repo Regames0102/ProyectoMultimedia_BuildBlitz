@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="botonera">
-        <item name="android:text">Algo</item>
+    <style name="botones">
+        <item name="android:textColor">@color/md_theme_tertiary</item>
+        <item name="fontFamily">@font/blkchcry</item>
+    </style>
+    <style name="textos">
+        <item name="android:fillColor">@color/md_theme_onPrimaryFixedVariant</item>
+        <item name="fontFamily">@font/berkshireswash_regular</item>
+    </style>
+    <style name="Titulos">
+        <item name="android:fillColor">@color/md_theme_onPrimaryFixedVariant</item>
+        <item name="fontFamily">@font/berkshireswash_regular</item>
     </style>
 </resources>
