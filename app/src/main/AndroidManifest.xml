@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logobien"
         android:supportsRtl="true"
-        android:theme="@style/SplashTheme"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
 
         <activity

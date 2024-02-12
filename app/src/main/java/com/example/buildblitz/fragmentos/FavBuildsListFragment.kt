@@ -1,6 +1,7 @@
 package com.example.buildblitz.fragmentos
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -14,9 +15,11 @@ class FavBuildsListFragment : BuildsListFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val listaBuildsFavoritas = obtenerBuildsFavoritas()
+        Log.d("Dani", obtenerBuildsFavoritas().toString())
         iniciarRecyclerView(listaBuildsFavoritas)
     }
-    fun obtenerBuildsFavoritas() :List<Builds>{
-        return BuildsProvider.listaItem.filter { it.esFavorita }
+    fun obtenerBuildsFavoritas() : MutableList<Builds>{
+        return BuildsProvider.listaItem.filter { it.esFavorita }.toMutableList()
     }
+
 }

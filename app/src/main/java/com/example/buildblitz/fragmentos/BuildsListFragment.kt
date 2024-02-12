@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.buildblitz.R
 import com.example.buildblitz.adapters.BuildsListAdapter
 import com.example.buildblitz.databinding.FragmentItemListBinding
 import com.example.buildblitz.databinding.ItemBuildBinding
@@ -26,18 +28,18 @@ open class BuildsListFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val listaBuilds = BuildsProvider.listaItem
-        iniciarRecyclerView(listaBuilds)
+        iniciarRecyclerView(BuildsProvider.listaItem)
     }
-    public fun iniciarRecyclerView(listDietas:List<Builds>) {
+    public fun iniciarRecyclerView(listBuilds:  MutableList<Builds>) {
         val manager = LinearLayoutManager(requireActivity())
         binding.RecyclerBuilds.layoutManager = manager
-        binding.RecyclerBuilds.adapter =
-            BuildsListAdapter(BuildsProvider.listaItem) { onItemSelected(it) }
-    }
-
-    private fun onItemSelected(item: Build) {
+        binding.RecyclerBuilds.adapter = BuildsListAdapter(listBuilds) { onItemSelected(it) }
 
     }
 
+    private fun onItemSelected(item: Builds) {
+        val bundle = Bundle()
+        bundle.putParcelable("build",item)
+        findNavController().navigate(R.id.action_menuFragment_to_detailBuildsFragment,bundle)
+    }
 }

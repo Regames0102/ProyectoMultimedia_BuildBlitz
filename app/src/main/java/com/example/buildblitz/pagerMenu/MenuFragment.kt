@@ -26,7 +26,7 @@ class MenuFragment : Fragment() {
         val view = binding.root
         val btnsalir = binding.VolverLogin
         btnsalir.setOnClickListener(){
-
+            findNavController().navigate(R.id.action_menuFragment_to_loginFragment)
         }
         return view
     }

@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">BuildBlitz</string>
-    <string name="explicacion">BuildBlitz es una increíble aplicación en la que puedes subir tus propias builds de objetos para League of Legends, explorar las builds de otros jugadores, o tambien puedes comparar tus builds con las de los demas, y asi comparar sus estadisticas</string>
+    <string name="explicacion">BuildBlitz es una increíble aplicación en la que puedes subir tus propias builds de objetos para League of Legends, explorar las builds de otros jugadores, o tambien puedes comparar tus builds con las de los demas, y asi comparar sus estadisticas. Desliza para Acceder...</string>
     <string name="bienvenida">¡Bienvenido a BuildBlitz! Gracias por elegirnos</string>
     <string name="btnTX">Acceder</string>
     <string name="CreditTX">Usuario estás usando la versión 1 de...</string>
+    <string name="Acceder">Pulse el boton para acceder a las distintas funcionalidades de la aplicacion</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

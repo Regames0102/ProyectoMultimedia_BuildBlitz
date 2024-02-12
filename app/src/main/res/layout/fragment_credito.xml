@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreditoFragment"
+    android:background="@color/lol"
     android:orientation="vertical"
-    android:background="@color/lol">
+    tools:context=".CreditoFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
@@ -13,32 +14,45 @@
         android:layout_width="match_parent"
         android:layout_height="182dp"
         android:layout_gravity="start"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/resultTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/CreditTX"
-        android:textSize="40sp"
         android:textColor="@color/white"
-        android:layout_gravity="center"/>
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <!-- Puedes personalizar esta sección con información sobre tu aplicación -->
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/explicacion"
-        android:textSize="24sp"
         android:layout_gravity="center"
         android:padding="16dp"
+        android:text="@string/explicacion"
         android:textColor="@color/white"
-        />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
 
     <Button
         android:id="@+id/contactButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contactar"
         android:layout_gravity="center"
-        android:onClick="contactarOnClick"/>
-</LinearLayout>
+        android:onClick="contactarOnClick"
+        android:text="Contactar"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

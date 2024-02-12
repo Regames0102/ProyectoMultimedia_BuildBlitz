@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/blue">
-
     <ImageView
         android:id="@+id/ivBuild"
         android:layout_width="100dp"
@@ -23,9 +28,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Nombre: "
+        android:text="Usuario: "
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
+        style="@style/Titulos"
         app:layout_constraintBottom_toTopOf="@id/TVUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivBuild"
@@ -39,6 +46,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:textSize="16sp"
+        style="@style/textos"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/tvBuildPersonaje"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivBuild"
@@ -53,9 +62,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Descripción:"
+        android:text="Personaje:"
         android:textSize="16sp"
         android:textStyle="bold"
+        style="@style/Titulos"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/tvPersonaje"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivBuild"
@@ -69,6 +80,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:textSize="14sp"
+        style="@style/textos"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/tvBuildPersonaje"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivBuild"
@@ -80,12 +93,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:textSize="14sp"
+        android:textSize="18sp"
+        style="@style/botones"
         android:text="Añadir a Favoritos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivBuild"
         app:layout_constraintTop_toBottomOf="@id/tvPersonaje"
+        android:textColor="@color/white"
         tools:text="añadir a favoritos" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
