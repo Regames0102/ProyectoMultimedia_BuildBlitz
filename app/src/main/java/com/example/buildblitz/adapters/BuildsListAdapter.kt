@@ -20,6 +20,8 @@ class BuildsListAdapter(private val ListaBuilds: MutableList<Builds>, private va
     override fun getItemCount(): Int =ListaBuilds.size
 
     override fun onBindViewHolder(holder: BuildsViewHolder, position: Int) {
-        holder.render(ListaBuilds[position],  onItemClick)
+        holder.render(ListaBuilds[position]){
+            onItemClick(ListaBuilds[position])
+        }
     }
 }

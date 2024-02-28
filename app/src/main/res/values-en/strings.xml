@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BuildBlitz</string>
+    <string name="explicacion">BuildBlitz is an amazing application where you can upload your own item builds for League of Legends, explore other players builds, or even compare your builds with others, thus comparing their statistics. Swipe to Access..</string>
+    <string name="bienvenida">Welcome to BuildBlitz, thanks for choosing us</string>
+    <string name="loginusuario">Put your username here</string>
+    <string name="personajeDetalle">Build for:</string>
+    <string name="objeto1">Item 1</string>
+    <string name="objeto2">Item 2</string>
+    <string name="objeto3">Item 3</string>
+    <string name="objeto4">Item 4</string>
+    <string name="objeto5">Item 5</string>
+    <string name="objeto6">Item 6</string>
+    <string name="btnTX">Login</string>
+    <string name="usuario">User:</string>
+    <string name="personaje">Character:</string>
+    <string name="btnfav">Add to favorites</string>
+    <string name="CreditTX">User, You are using the version 1 of...</string>
+    <string name="Acceder">Press the button to go to the functions of the application </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="volver">Go back to menu</string>
+    <string name="salir">Exit</string>
+    <string name="Builds">Builds</string>
+    <string name="Favoritos">Favorites</string>
+    <string name="UsuarioMenu">User</string>
+</resources>

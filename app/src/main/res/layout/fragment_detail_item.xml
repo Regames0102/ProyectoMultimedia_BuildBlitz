@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:text="Build del Personaje"
+        tools:text="@string/personaje"
         style="@style/Titulos"/>
 
     <!-- Objeto 1 -->
@@ -23,7 +23,7 @@
         android:id="@+id/tvObjeto1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Objeto 1"
+        android:text="@string/objeto1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/personaje"
         android:layout_marginTop="16dp"
@@ -45,7 +45,7 @@
         android:id="@+id/tvObjeto2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Objeto 2"
+        android:text="@string/objeto2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvObjeto1"
         android:layout_marginTop="20dp"
@@ -68,7 +68,7 @@
         android:id="@+id/tvObjeto3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Objeto 3"
+        android:text="@string/objeto3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvObjeto2"
         android:layout_marginTop="20dp"
@@ -90,7 +90,7 @@
         android:id="@+id/tvObjeto4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Objeto 4"
+        android:text="@string/objeto4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvObjeto3"
         android:layout_marginTop="20dp"
@@ -112,7 +112,7 @@
         android:id="@+id/tvObjeto5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Objeto 5"
+        android:text="@string/objeto5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvObjeto4"
         android:layout_marginTop="20dp"
@@ -134,7 +134,7 @@
         android:id="@+id/tvObjeto6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Objeto 6"
+        android:text="@string/objeto6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvObjeto5"
         android:layout_marginTop="20dp"
@@ -150,5 +150,14 @@
         app:layout_constraintBottom_toBottomOf="@id/tvObjeto6"
         android:layout_marginEnd="16dp"
         />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 

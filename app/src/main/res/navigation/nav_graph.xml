@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_loginFragment_to_viewpagerFragment"
             app:destination="@id/viewpagerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_favBuildsListFragment"
+            app:destination="@id/favBuildsListFragment" />
     </fragment>
     <fragment
         android:id="@+id/viewpagerFragment"
@@ -36,13 +39,22 @@
             app:destination="@id/detailBuildsFragment" />
     </fragment>
     <fragment
+        android:id="@+id/detailBuildsFragment"
+        android:name="com.example.buildblitz.fragmentos.DetailBuildsFragment"
+        android:label="fragment_detail_item"
+        tools:layout="@layout/fragment_detail_item" >
+        <action
+            android:id="@+id/action_detailBuildsFragment_to_menuFragment2"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
         android:id="@+id/buildsListFragment"
         android:name="com.example.buildblitz.fragmentos.BuildsListFragment"
         android:label="fragment_item_list"
         tools:layout="@layout/fragment_item_list" />
     <fragment
-        android:id="@+id/detailBuildsFragment"
-        android:name="com.example.buildblitz.fragmentos.DetailBuildsFragment"
-        android:label="fragment_detail_item"
-        tools:layout="@layout/fragment_detail_item" />
+        android:id="@+id/favBuildsListFragment"
+        android:name="com.example.buildblitz.fragmentos.FavBuildsListFragment"
+        android:label="fragment_fav_item_list"
+        tools:layout="@layout/fragment_fav_item_list" />
 </navigation>

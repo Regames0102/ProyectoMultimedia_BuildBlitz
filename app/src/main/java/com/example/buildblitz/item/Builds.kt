@@ -20,7 +20,6 @@ data class Builds(
     val fotoobjeto5:String,
     val objeto6:String,
     val fotoobjeto6:String,
-    var esFavorita:Boolean
     ):Parcelable {
         constructor(parcel: Parcel) : this(
             parcel.readInt(),
@@ -39,7 +38,7 @@ data class Builds(
         parcel.readString() ?: "",
         parcel.readString() ?: "",
         parcel.readString() ?: "",
-        parcel.readByte() != 0.toByte()
+
     )
 
 
@@ -47,7 +46,7 @@ override fun writeToParcel(parcel: Parcel, flags: Int) {
     parcel.writeString(usuario)
     parcel.writeString(personaje)
     parcel.writeString(build)
-    parcel.writeByte(if (esFavorita) 1 else 0)
+
 }
 
 override fun describeContents(): Int {

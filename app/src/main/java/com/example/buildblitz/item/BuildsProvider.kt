@@ -2,7 +2,10 @@ package com.example.buildblitz.item
 
 class BuildsProvider {
     companion object{
+        var ListaFavBuilds = mutableListOf<Int>()
+
         val listaItem: MutableList<Builds> = mutableListOf(
+
             Builds(
                 id=1,
                 usuario = "Regames",
@@ -20,7 +23,6 @@ class BuildsProvider {
                 fotoobjeto5 = "https://images.ctfassets.net/ekkp7rrkr2gn/3edUtoM2GDztrwSj4fXHL3/d823439f765641905347b97adb4af8f0/navaja_hanu.png" ,
                 fotoobjeto6 = "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt172a9e76ab952d52/64812a23359ef027fe60c644/Rapid_Firecannon_v2.png" ,
                 build = "https://cdnportal.mobalytics.gg/production/2023/01/c3355b11-caitlyn-support-build-v2.jpeg",
-                esFavorita = false
             ),
             Builds(
                 id=2,
@@ -39,7 +41,6 @@ class BuildsProvider {
                 objeto5 = "Navajo de Asalto",
                 objeto6 = "Cañon de Fuego Rapido",
                 build = "https://en.kicdo.com/images/products/63391ae418e85_ezreal-wild-rift-build.jpg",
-                esFavorita = false
             ),
             Builds(
                 id=3,
@@ -58,7 +59,6 @@ class BuildsProvider {
                 objeto6 = "Cañon de Fuego Rapido",
                 fotoobjeto6 = "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt172a9e76ab952d52/64812a23359ef027fe60c644/Rapid_Firecannon_v2.png" ,
                 build = "https://theglobalgaming.com/assets/images/_generated/articleimages/2632677/veigarlolguide1_bfac2ef581d5bb9296904d0482d7c77f.jpeg",
-                esFavorita = false
             ),
             Builds(
                 id=4,
@@ -77,7 +77,6 @@ class BuildsProvider {
                 fotoobjeto5 = "https://images.ctfassets.net/ekkp7rrkr2gn/3edUtoM2GDztrwSj4fXHL3/d823439f765641905347b97adb4af8f0/navaja_hanu.png" ,
                 objeto6 = "Cañon de Fuego Rapido",
                 fotoobjeto6 = "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt172a9e76ab952d52/64812a23359ef027fe60c644/Rapid_Firecannon_v2.png" ,
-                esFavorita = false
             ),
             Builds(
                 id=5,
@@ -96,7 +95,6 @@ class BuildsProvider {
                 objeto6 = "Cañon de Fuego Rapido",
                 fotoobjeto6 = "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt172a9e76ab952d52/64812a23359ef027fe60c644/Rapid_Firecannon_v2.png" ,
                 build = "https://pbs.twimg.com/media/ErU9lVZVoAE083G.jpg",
-                esFavorita = false
             )
         )
     }

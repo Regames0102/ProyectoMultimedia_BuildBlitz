@@ -28,6 +28,7 @@
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
@@ -36,7 +37,7 @@
         android:layout_height="168dp"
         android:layout_weight="0.004"
         android:gravity="center"
-        android:hint="Introduce tu Usuario aqui"
+        android:hint="@string/usuario"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/welcomeText" />

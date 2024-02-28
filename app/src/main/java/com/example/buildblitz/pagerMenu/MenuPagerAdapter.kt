@@ -19,7 +19,7 @@ companion object{
         val fragment2= FavBuildsListFragment()
         val fragment3= UserInfoFragment()
         if (position==0){
-            return  fragment
+            return fragment
         }
         else if (position==1){
             return fragment2

@@ -38,13 +38,13 @@ class MenuFragment : Fragment() {
         val tablayout = binding.tablayout
         TabLayoutMediator(tablayout, menuPager) { tab, position ->
             if (position==0){
-                tab.text = "Builds"
+                tab.text = getString(R.string.Builds)
             }
             else if (position==1){
-                tab.text = "Favoritos"
+                tab.text = getString(R.string.Favoritos)
             }
             else if (position==2){
-                tab.text = "Usuario"
+                tab.text = getString(R.string.UsuarioMenu)
             }
         }.attach()
     }
